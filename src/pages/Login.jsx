@@ -1,27 +1,40 @@
-// src/pages/auth/Login.js
-import React, { useState } from 'react';
-import { Container, Row, Col, Card, Form, Button, Alert } from 'react-bootstrap';
+import React from 'react';
 import '../styles/components/Login.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Login = () => {
   return (
-    <div>
-        <form action="/login" method="POST">
-            <h1>Login</h1>
-
-            <div>
-                <input type="text" id="username" name="username" placeholder="Ingrese su usuario" required />
+    <div className="login-page">
+        <form action="/login" method="POST" className="login-form">
+        <h1 className="login-form__title">LOGIN</h1>
+  
+            <div className="login-form__group">
+                <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="User"
+                required
+                className="login-form__input"
+                />
             </div>
-
-            <div>
-                <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required />
+  
+            <div className="login-form__group">
+                <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                required
+                className="login-form__input"
+                />
             </div>
-
-            <div>
-                <button type="submit">Enviar</button>
+  
+            <div className="login-form__group">
+                <button type="submit" className="login-form__button" placeholder="Password">Enviar</button>
             </div>
         </form>
-    </div>
+    </div>  
   );
 };
 

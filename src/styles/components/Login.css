@@ -1,25 +1,55 @@
-
-.login-container {
-    background-color: #f8f9fa;
+.login-page {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(155, 155, 155, 0.5);
+    border: 0.25em solid #ffffff;
+    border-radius: 1em;
 }
 
-.card {
-    border-radius: 10px;
+.login-form {
+    margin: 1vh;
+    padding: 3vh 1vh;
+    font-size: 2em;
+}
+
+.login-form__title {
+    color: #ffffff;
+}
+
+.login-form__group {
+    margin: 0.25vh;
+    padding: 0.25vh;
+}
+
+.login-form__input {
+    background-color: transparent;
+    margin: 2vh 1vh 4vh 1vh;
+    padding: 0 2vh;
+    text-align: center;
     border: none;
+    border-bottom: 1px solid #fff;
 }
 
-.btn-primary {
-    padding: 10px;
-    border-radius: 5px;
+.login-form__input::placeholder {
+    color: #fff;
 }
 
-.form-control:focus {
+.login-form__input:focus {
     box-shadow: none;
-    border-color: #0d6efd;
+    outline: none;
+    background-color: transparent;
 }
 
-/* Si quieres un fondo con gradiente */
-body {
-    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
-    min-height: 100vh;
+
+.login-form__button {
+    border-radius: 1em;
+    margin: 1vh;
+    padding: 1vh 3vh;
+    background-color: transparent;
+    border: 0.25vh solid #ffffff;
+    color: #fff;
+}
+
+.login-form__button:hover {
+    background-color: rgb(185, 185, 185);
 }
